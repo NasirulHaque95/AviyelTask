@@ -1,0 +1,22 @@
+{
+  "name": "aviyeltask",
+  "version": "1.0.0",
+  "description": "This is an assignment on Web UI and API testing using cypress",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^9.4.1",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge-reports": "mochawesome-merge ./cypress/results/*.json -o ./cypress/results/m-report.json",
+    "generate-html": "marge ./cypress/results/m-report.json --reportDir ./cypress/results/m-report"
+  },
+  "author": "Nasir",
+  "license": "ISC"
+}
